@@ -8,6 +8,7 @@ app.register_blueprint(category_bp)
 # Remove the `if __name__ == '__main__':` block
 # and run the app with WSGI server
 
-if __name__ == "__main__":
-    app.run()
+db.create_all()
+#if __name__ == "__main__":
+#    app.run()
 
