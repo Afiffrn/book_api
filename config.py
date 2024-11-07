@@ -10,5 +10,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Inisialisasi objek database
 db = SQLAlchemy(app)
+@app.route('/')
+def home():
+    return "hello world!!!"
 
 app.app_context().push()
